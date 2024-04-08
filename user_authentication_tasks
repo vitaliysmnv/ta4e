@@ -1,0 +1,97 @@
+import hashlib
+
+# Dummy user data (in a real app, use a database)
+users = {}
+
+# Check if the user is logged in
+def is_logged_in():
+    return 'username' in users
+
+# Function for user registration
+def register():
+    print("===== User Registration =====")
+    username = input("Enter your username: ")
+
+    # Check if username is already taken
+    if username in users:
+        print('Username already taken. Please choose another one.')
+        return
+
+    while True:
+        password = input("Enter your password: ")
+        confirm_password = input("Confirm your password: ")
+
+        # Check if passwords match
+        if password == confirm_password:
+            hashed_password = hashlib.sha256(password.encode()).hexdigest()
+            break
+        else:
+            print("Passwords do not match. Please try again.")
+
+    email = input("Enter your email address: ")
+
+    # Additional user details can be added here
+    users[username] = {'username': username, 'password': hashed_password, 'email': email}
+    print('Registration successful. Please log in.')
+
+# Function for user login
+def login():
+    print("===== User Login =====")
+    username = input("Enter your username: ")
+
+    # Check if user exists
+    if username not in users:
+        print('User not found. Please register or enter a valid username.')
+        return
+
+    password_attempt = hashlib.sha256(input("Enter your password: ").encode()).hexdigest()
+
+    # Check if password is correct
+    if users[username]['password'] == password_attempt:
+        print('Login successful')
+    else:
+        print('Invalid password. Please try again.')
+
+# Function for the dashboard (protected route)
+def dashboard():
+    print("===== User Dashboard =====")
+    if is_logged_in():
+        current_user = users['username']
+        print(f"Welcome, {current_user['username']}! This is your dashboard.")
+        
+        # Additional dashboard elements
+        print(f"Email: {current_user['email']}")
+        # Include more information or actions related to the dashboard here
+        
+    else:
+        print('Please log in first.')
+
+# Function for logging out
+def logout():
+    print("===== Logout =====")
+    if is_logged_in():
+        current_user = users['username']
+        print(f"Goodbye, {current_user['username']}!")
+        del users['username']
+    else:
+        print('You are not logged in.')
+
+# Main entry point
+if __name__ == '__main__':
+    while True:
+        print("\n1. Register\n2. Login\n3. Dashboard\n4. Logout\n5. Exit")
+        choice = input("Enter your choice (1-5): ")
+
+        if choice == '1':
+            register()
+        elif choice == '2':
+            login()
+        elif choice == '3':
+            dashboard()
+        elif choice == '4':
+            logout()
+        elif choice == '5':
+            print('Goodbye!')
+            break
+        else:
+            print('Invalid choice. Please enter a number from 1 to 5.')

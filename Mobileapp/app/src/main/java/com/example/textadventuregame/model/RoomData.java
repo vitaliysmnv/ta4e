@@ -1,0 +1,110 @@
+package com.example.textadventuregame.model;
+
+public class RoomData {
+    public static final String[][] ROOM_DATA = {
+            {"Entrance Hall",
+                    "You stand in a dimly lit entrance hall. The air is thick with anticipation. You don`t know yet what you will face down there. There are rumors that a dragon lurks in the depths. Revise your inventory and step into the darkness.",
+                    "None",
+                    "None",
+                    "entrance_hall_image",
+                    ""},
+
+            {"Dark Corridor",
+                    "A dark and eerie corridor stretches ahead. You hear faint whispers in the shadows. The demonic monster takes you by surprise, you have no choice but to fight back!",
+                    "Monster",
+                    "FIGHT",
+                    "dark_corridor_image",
+                    "Sword,MedKit"},
+
+            {"Treasure Room",
+                    "A room filled with glittering treasures. The air is filled with the scent of wealth. Watch attentively and maybe you will find something useful.",
+                    "Treasure",
+                    "COLLECT",
+                    "treasure_image",
+                    "MagicSword,Shield"},
+
+            {"Trap Room",
+                    "Watch your step! This room is filled with traps. The floor is suspiciously uneven. Deactivate the traps if you are brave enough.",
+                    "Trap",
+                    "DEACTIVATE",
+                    "trap_image",
+                    ""},
+
+            {"Guardian Chamber",
+                    "A powerful guardian blocks your way. Its eyes glow with an otherworldly energy. Defeat the guardian to access other rooms.",
+                    "Monster",
+                    "FIGHT",
+                    "boss_image",
+                    "MedKit,Shield"},
+
+            {"Library of Ancient Tomes",
+                    "Rows of dusty tomes line the shelves. The knowledge of centuries is at your fingertips. You look at the old medicine book. On one page there were detailed instructions for making a first aid kit.",
+                    "Treasure",
+                    "COLLECT",
+                    "library_image",
+                    "MedKit"},
+
+            {"Enchanted Garden",
+                    "A magical garden filled with vibrant flowers. The air is infused with a sweet aroma. How they even grow under ground?!",
+                    "None",
+                    "None",
+                    "garden_image",
+                    ""},
+
+            {"Forgotten Alchemy Lab",
+                    "Bubbling potions and ancient apparatuses fill the room. A mysterious concoction simmers. It seems like somebody still making potions here. You approach colorful flasks on the table.",
+                    "Treasure",
+                    "Grab potions",
+                    "alchemy_lab_image",
+                    "Potion,Potion"},
+
+            {"Hall of Mirrors",
+                    "Mirrors reflect your image endlessly. It's disorienting, but there's something intriguing about it.",
+                    "None",
+                    "None",
+                    "hall_of_mirrors_image",
+                    ""},
+
+            {"Crystal Cavern",
+                    "Glowing crystals illuminate the cavern. The walls sparkle with a mesmerizing radiance.",
+                    "None",
+                    "None",
+                    "crystal_cavern_image",
+                    ""},
+
+            {"Chamber of Whispers",
+                    "The air is filled with ghostly whispers. You strain to hear the secrets hidden within. They beckon you to listen to what they whisper.",
+                    "Horror",
+                    "Listen to them",
+                    "whisper_chamber_image",
+                    ""},
+
+            {"Mystic Observatory",
+                    "Telescopes point to the cosmos. The mysteries of the universe unfold before your eyes.",
+                    "None",
+                    "None",
+                    "observatory_image",
+                    ""},
+
+            {"Dragon's Lair",
+                    "You cant believe your eyes. A dragon slumbers on a pile of treasures. Decide whether to quietly slip past him while he sleeps or wake him up and fight him for glory and treasure.",
+                    "Dragon",
+                    "FIGHT",
+                    "dragon_lair_image",
+                    "DragonBlade"},
+
+            {"Fountain of Youth",
+                    "A magical fountain stands in the center. Its waters are said to grant eternal youth.",
+                    "Heal",
+                    "Drink water",
+                    "fountain_image",
+                    ""},
+
+            {"Hall of Echoes",
+                    "Your footsteps echo through this vast hall. The sound is both haunting and oddly comforting.",
+                    "None",
+                    "None",
+                    "hall_of_echoes_image",
+                    ""}
+    };
+}
