@@ -1,6 +1,6 @@
 # ta4e
 ## Text Adventure Game for Education
-### CS461-462 Project OSU
+### CS461-463 Project OSU
 ## Contributors
 #### Vitaliy Samonov
 #### Harinder Garchah
@@ -14,9 +14,15 @@ Download and install xampp.
 Set documentroot to the project folder in httpd.conf file.
 ### Set up database
 Create ta4e database in mysql managament tools.
-Run ta4e.sql
-## How to setup mobile part?
-Open project in Android Studio for the development.
-Load apk file to your mobile for playing game.
+load ta4e.sql into the ta4e database.
 ## How to run?
 Go to http://localhost in webbrowser and you can see the project running.
+## How to login as Admin?
+Please fill in address and password boxed and click login button.
+address: admin@gmail.com
+password: admin@gmail.com
+![Login page](login.jpg "Login page")
+## How to register?
+
+
+
