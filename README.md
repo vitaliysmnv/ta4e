@@ -21,7 +21,7 @@ Go to http://localhost in webbrowser and you can see the project running.
 Please fill in address and password boxed and click login button.
 address: admin@gmail.com
 password: admin@gmail.com
-![Login page](login.jpg "Login page")
+![Login page](login.png "Login page")
 ## How to register?
 
 
