@@ -321,4 +321,4 @@ remember that these commands can be removed from your game, or you can write you
 * [REXPaint](https://www.gridsagegames.com/rexpaint) - Makes creating ASCII art super easy.
 * [ASCII-Code.com](http://www.ascii-code.com) - Convenient for copying and pasting ASCII characters.
 * [Text to ASCII Art Generator](http://patorjk.com/software/taag/#p=display&h=2&v=2&f=ANSI%20Regular&t=text%0A-engine) - Make ASCII logos from text.
-* [ASCII Art Archive](https://www.asciiart.eu/buildings-and-places/castles).
+* [ASCII Art Archive](https://www.asciiart.eu/buildings-and-places/castles) - Select some ASCII art.
