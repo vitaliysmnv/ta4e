@@ -47,7 +47,7 @@ if ($result->num_rows > 0) {
 
 <body class="bg-gray-100">
     <?php
-    include('header.php');
+    include('../header.php');
     ?>
     <div class="p-8">
 

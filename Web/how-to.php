@@ -10,7 +10,7 @@ include('backend/connect.php');
 include('header.php');
 ?>
 
-<div class="m-[160px] mt-[96px]">
+<div class="md:m-[160px] m-4 mt-[96px]">
   <!-- Game content -->
   <div id="output"></div>
 

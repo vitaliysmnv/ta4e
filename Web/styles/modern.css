@@ -42,9 +42,9 @@ br {
 }
 
 .room-name {
-  margin-top: 88px;
+  margin-top: 10px;
   font-family: 'Nanum Gothic Coding', monospace;
-  font-size: 40.5px;
+  font-size: 30.5px;
 }
 
 .title {
@@ -66,9 +66,8 @@ br {
 }
 
 #input {
-  color: lightskyblue;
+  color: rgb(21, 2, 72);
   background: transparent;
-  font-size: 29px;
   font-family: 'Work Sans', sans-serif;
   border: none;
   position: relative;
@@ -86,7 +85,7 @@ br {
 
 /* color the user's input & links */
 .user, a {
-  color: lightskyblue;
+  color: rgb(17, 4, 92);
 }
 
 @keyframes blink {

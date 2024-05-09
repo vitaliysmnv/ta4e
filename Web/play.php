@@ -10,15 +10,13 @@ include('backend/connect.php');
 include('header.php');
 ?>
 
-<div class="m-[160px] mt-[96px]">
+<div class="md:m-[160px] m-4 mt-[96px]">
   <!-- Game content -->
-  <div id="output"></div>
-
+  <div id="output" class="text-[1rem] text-black md:text-[1.5rem] text-tight"></div>
   <!-- Player input -->
-  <div class="input">
+  <div class="input" class="text-[1rem] text-black md:text-[1.5rem] text-tight">
     <span class="ml-2">> </span><input id="input" autofocus spellcheck="false">
   </div>
-
 </div>
 
 <!-- CSS styles -->

@@ -5,7 +5,7 @@ if (!isset($_SESSION['role']) || $_SESSION['role'] != 'admin') {
 }
 include("../backend/connect.php");
 // Retrieve user list from the database
-$sql = "SELECT * FROM users";
+$sql = "SELECT * FROM users where role <> 'admin'";
 $result = $conn->query($sql);
 
 ?>
@@ -23,7 +23,7 @@ $result = $conn->query($sql);
 
 <body class="bg-gray-100">
     <?php
-    include('header.php');
+    include('../header.php');
     ?>
     <div class="p-8">
         <h1 class="text-2xl font-bold mb-4">User Management</h1>

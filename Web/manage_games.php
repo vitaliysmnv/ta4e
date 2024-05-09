@@ -11,10 +11,11 @@ include('backend/connect.php');
 <link href="assets/css/toastr.css" rel="stylesheet">
 
 <?php
+$_SEISSION['page']="managegame";
 include('header.php');
 ?>
 
-<div class="m-[160px] mt-[96px] h-full overflow-auto">
+<div class="md:m-[160px] m-4 mt-[96px] h-full overflow-auto">
   <div class="flex justify-between">
     <div class="font-bold text-[black] text-[1.5rem]">Game List</div>
     <a href="add_game.php" class="text-[1rem] text-blue-600 hover:text-[blue]">Add A New Game</a>
