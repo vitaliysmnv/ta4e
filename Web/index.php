@@ -6,12 +6,15 @@ session_start();
 
 <script src="https://cdn.tailwindcss.com"></script>
 <?php
-  $_SEISSION['page']="home";
+  $webPath = $_SERVER['PHP_SELF'];
+  $_SESSION['rootpath'] = dirname($webPath);
+  if ($_SESSION['rootpath']=="\\")
+    $_SESSION['rootpath'] = "";
   include('header.php');
 ?>
 
   <div class="relative w-full ">
-    <img src="/assets/img/bg.webp" alt="bg" class="w-full h-auto" />
+    <img src="assets/img/bg.webp" alt="bg" class="w-full h-auto" />
     <div class="absolute font-bold text-[#fff] top-[30%] text-center w-[90%] ml-[5%] text-[1.7rem] md:text-[3.2rem]">
       Unlock Learning Through Epic Adventures
     </div>
